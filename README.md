@@ -29,14 +29,22 @@ The purpose of this analysis is to offer insights on the MechaCar's production t
 
 ### T-Tests on Suspension Coils
 - T-Tests were performed to determine whether the aggregate of manufacturing lots, or the individual manufacturing lots, are statistically different from the population mean of 1500 PSI.
+  - NULL Hypothesis: There is no significant difference between the mean PSI of all manufacturing lots and individual lots and population mean of 1500 PSI.
+  - Alternative Hypothesis: There is significant difference between the mean PSI of all manufacturing lots and population mean of 1500 PSI
 
 ![d3 ttest total](https://user-images.githubusercontent.com/83254435/130503581-ea9027ff-bb3c-4cea-b0e7-c9b09437a29e.PNG)
 
-- The aggregate group's p-value was greater than .05. We fail to reject the null hypothesis that there is no statistical difference between this group and the population mean.
+- The aggregate group's p-value was greater than .05. We fail to reject the null hypothesis that there is no significant difference between the mean PSI of all manufacturing lots and individual lots and population mean of 1500 PSI.
 
 ![d3 ttest lots](https://user-images.githubusercontent.com/83254435/130503602-5ec3a78f-c8da-444d-99bb-a7dbbbb396bb.PNG)
 
-- Lot 1 and Lot 2 have p-values greater than .05. We fail to reject the null hypothesis that there is no statistical difference between this group and the population mean.
-- Lot 3 has a p-value lower than .05. This suggests strong evidence to reject the null hypothesis. Ergo, there is a statistical difference between this group and the population mean.
+- Lot 1 and Lot 2 have p-values greater than .05. We fail to reject the null hypothesis that there is no significant difference between the mean PSI of all manufacturing lots and individual lots and population mean of 1500 PSI.
+- Lot 3 has a p-value lower than .05. This suggests strong evidence to reject the null hypothesis. Ergo, there is significant difference between the mean PSI of all manufacturing lots and population mean of 1500 PSI
 
 ### Study Design: MechaCar Competition
+To compare MechaCar against the competition, we propose performing statistical analysis on Safety Ratings.
+
+  - Data type: Categorical, Ordinal, 1 to 5 star ratings.
+  - Test: Chi-Squared Test
+  - NULL Hypothesis: There is no significant difference in the categorical frequencies of safety ratings for MechaCar and the competition.
+  - Alternative hypothesis: There is a significant difference in the categorical frequencies of safety ratings for MechaCar and the competition.
